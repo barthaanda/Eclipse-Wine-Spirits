@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eclipse Wine & Spirits - Descoperă o selecție de vinuri și spirtoase premium într-un decor elegant și primitor.">
+    <meta name="keywords" content="vinuri, spirtoase, bar, Eclipse Wine & Spirits, cocktailuri, băuturi premium">
+    <meta name="author" content="Bartha Anda">
+    <title>Eclipse Wine & Spirits</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .navbar {
+             background-color: #dec9c9;
+        }
+
+        .navbar-brand img {
+            max-height: 50px; 
+            width: auto; 
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #dec9c9;
+        }
+
+
+        .carousel-item img {
+            height: 600px; 
+            object-fit: cover; 
+        }
+
+        .carousel-caption {
+           background-color: rgba(0, 0, 0, 0.5); 
+           border-radius: 10px; 
+           padding: 10px;
+        }
+        .description {
+            min-height: 100px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#despre-noi">Despre noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bauturile-noastre">Băuturi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evenimente">Evenimente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <header>
+        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+    
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="head1.jpg" class="d-block w-100" alt="Primul slide - Petreceri">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fs-1">Eclipse Wine & Spirits</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="head2.jpg" class="d-block w-100" alt="Al doilea slide - Shoturi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1">Un bar caracterizat de distracție</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="head3.jpg" class="d-block w-100" alt="Al treilea slide - Evenimente">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1">cu cocktail-uri premium</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="head4.jpg" class="d-block w-100" alt="Al patrulea slide - Bauturi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1">bere artizanală</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="head5.jpg" class="d-block w-100" alt="Al cincilea slide - Cocktailuri">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1">și băuturi rafinate.</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Următor</span>
+            </button>
+        </div>
+    </header>
+
+
+    <section id="despre-noi" class="py-5" style="background-color: #dec9c9;">
+        <div class="container text-center">
+            <h2 class="text-center mb-4 fs-1">Despre Noi</h2>
+            <p class="fs-5">
+                Situat în inima orașului, Eclipse Wine & Spirits este mai mult decât un bar – este o călătorie în timp. Fondat acum peste un secol și moștenit de șapte generații, locul nostru este martor al istoriei și al poveștilor ce se nasc la fiecare pahar. Fiecare colț al barului păstrează o parte din farmecul său original, combinând eleganța clasică cu o notă modernă. Vinurile noastre sunt 100% autentice și românești, provenind din cele mai renumite regiuni viticole ale țării, pentru a aduce la fiecare pahar esența terroir-ului nostru unic.
+            </p>
+        </div>
+    </section>
+
+
+    
+    <div class="container text-center py-3">
+        <h2 id="bauturile-noastre" class="mb-4 fs-1" style="background-color: #ffffff;">Băuturile Noastre</h2>
+        <h3>Tradițe și creativitate</h3>
+    </div>
+    
+    
+    <section class="py-5" style="background-color: #dc9ca0;">
+        <div class="container">
+            <div class="row justify-content-around text-center">
+                <div class="col-md-3">
+                    <h4 class="fs-3">Bere Artizanală</h4>
+                    <span class="badge bg-success mb-2">Disponibil</span>
+                    <img src="bauturi11.jpg" alt="Bere Artizanală" class="img-fluid mb-3">
+                    <p class="fs-6 description">Oferim o gamă largă de beri artizanale, produse local, fiecare cu un gust unic, creată prin metode tradiționale și ingrediente de calitate superioară.</p>
+                    <p class="fs-5 fw-bold">20 RON</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fs-3">Cocktailuri Exotice</h4>
+                    <span class="badge bg-warning mb-2">Ofertă Specială</span>
+                    <img src="bauturi2.jpg" alt="Cocktailuri Exotice" class="img-fluid mb-3">
+                    <p class="fs-6 description">Barmanii noștri talentați creează băuturi unice, inspirate de aromele tropicale și condimentele îndrăznețe, perfecte pentru a aduce un strop de aventură serilor tale.</p>
+                    <p class="fs-5 fw-bold">40 RON</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fs-3">Băuturi Clasice</h4>
+                    <span class="badge bg-success mb-2">Disponibil</span>
+                    <img src="bauturi3.jpg" alt="Băuturi Clasice" class="img-fluid mb-3">
+                    <p class="fs-6 description">De la whiskey-uri fine la lichioruri de calitate superioară, barul nostru satisface și cele mai sofisticate gusturi.</p>
+                    <p class="fs-5 fw-bold">35 RON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="py-3 bg-white"></div>
+    
+    
+    <section id="evenimente" class="py-5" style="background-color: #dec9c9;">
+    <div class="py-5" style="background-color: #dec9c9;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <img src="event1.jpg" alt="Eveniment privat" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2 class="mb-4 fs-1">Evenimente</h2>
+                    <p class="fs-5">
+                        La Eclipse Wine & Spirits gazduim evenimente private, concerte live și surprize memorabile pentru toți cei care ne trec pragul. Fiecare moment este special, iar noi ne asigurăm că devine de neuitat prin atenția la detalii și atmosfera unică. Indiferent de ocazie, echipa noastră dedicată este aici pentru a transforma orice vis în realitate. 
+                    </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="event2.jpg" alt="Concert live" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Eclipse Wine & Spirits. Toate drepturile rezervate.</p>
+            <p>Strada Principală, Nr. 123, București, România | Telefon: +40 123 456 789 | Email: contact@eclipsews.ro</p>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>
+
+
